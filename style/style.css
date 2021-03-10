@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*reset*/
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {vertical-align: middle;}
+
+a {text-decoration: none;}
+a:link {color: #222;}
+a:visited {color: #222;}
+a:hover {color: #333;}
+a:active {color: #333;}
+
+ul {list-style: none;}
+/*reset*/
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+/*div#wrap 끝*/
+
+/*GNB메뉴 시작*/
+nav#gnb {
+    padding: 10px;
+    border: 1px solid #000;
+}
+nav#gnb>ul#mainMenu {
+   /* border: 1px solid #08f;*/
+}
+nav#gnb>ul#mainMenu::after {
+    content: "";
+    height: 48px;
+    display: block;
+}
+nav#gnb>ul#mainMenu>li {
+    border: 1px solid #aaa;
+    float: left;
+}
+nav#gnb a {
+    font-size: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+nav#gnb #mainMenu>li>a {
+    font-weight: bold;
+    background-color: #08f;
+}
+nav#gnb a:hover {
+    font-weight: bold;
+    background-color: #08f;
+}
+#gnb ul.subMenu {
+    display: none;
+}
+/*GNB메뉴 끝*/
